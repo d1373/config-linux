@@ -1,0 +1,37 @@
+#  ███████╗███████╗███████╗██╗  ██╗     ██████╗ ██████╗ ███╗   ██╗███████╗██╗ ██████╗ 
+#  ██╔════╝██╔════╝██╔════╝██║  ██║    ██╔════╝██╔═══██╗████╗  ██║██╔════╝██║██╔════╝ 
+#  ███████╗█████╗  ███████╗███████║    ██║     ██║   ██║██╔██╗ ██║█████╗  ██║██║  ███╗
+#  ╚════██║██╔══╝  ╚════██║██╔══██║    ██║     ██║   ██║██║╚██╗██║██╔══╝  ██║██║   ██║
+#  ███████║███████╗███████║██║  ██║    ╚██████╗╚██████╔╝██║ ╚████║██║     ██║╚██████╔╝
+#  ╚══════╝╚══════╝╚══════╝╚═╝  ╚═╝     ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝     ╚═╝ ╚═════╝ 
+
+
+# default
+
+[default_session]
+startup_command = ""
+startup_command_ignore_dirs = ["~/repos", "~/.config"]
+preview_command = "eza --all --git --icons --color=always {}"
+
+# main session + Finder Session
+[[session]]
+name = "main"
+path = "~"
+startup_command = ""
+
+# Configs 
+[[session]]
+name = "dotfiles"
+path = "~/.config"
+startup_command = "nvim ."
+
+[[session]]
+name = "neovim config"
+path = "~/.config/nvim/"
+startup_command = "nvim ."
+
+[[session]]
+name = "Notes"
+path = "~/Notes/"
+startup_command = "nvim ."
+
