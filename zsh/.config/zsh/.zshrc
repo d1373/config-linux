@@ -107,11 +107,8 @@ zinit light Aloxaf/fzf-tab
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-syntax-highlighting
 zinit snippet OMZP::git
-zinit snippet OMZP::sudo          # Press ESC twice to add sudo
 zinit snippet OMZP::command-not-found
 zinit snippet OMZP::extract       # Universal extract command
-zinit snippet OMZP::copyfile      # Copy file contents to clipboard
-zinit snippet OMZP::copypath      # Copy current path to clipboard
 ### End of Plugins
 #===============================================================================
 # settings for plugins
@@ -131,6 +128,8 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=244'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias cat='bat'
+alias sudo='sudo-rs'
+alias sudoedit='sudo-rs -e'
 alias vi='nvim'
 alias v='nvim'
 alias grep='rg'
