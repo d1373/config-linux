@@ -149,3 +149,5 @@ alias zednb="launchctl setenv LOCAL_NOTEBOOK_DEV 1"
 alias n='pnpm'
 alias mb="~/.local/share/scripts/brew-search.sh"
 alias mbr="~/.local/share/scripts/brew-remove.sh"
+alias di="~/.local/share/scripts/dnf-install"
+alias dr="~/.local/share/scripts/dnf-remove"
