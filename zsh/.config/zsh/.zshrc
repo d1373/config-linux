@@ -43,12 +43,11 @@ export BAT_THEME="ansi"
 setopt correct
 eval "$(zoxide init zsh)"
 export GPG_TTY=$(tty)
-# Added by LM Studio CLI (lms)
-export PATH="$PATH:/Users/dhyey/.lmstudio/bin"
-# End of LM Studio CLI section
 export PATH="$HOME/.local/share/scripts:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 # .zshrc
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"   # moved up
+
 autoload -U promptinit; promptinit
 prompt pure
 # pnpm
@@ -58,7 +57,6 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
 eval "$(fnm env --use-on-cd --shell zsh)"
 
 autoload -Uz compinit
